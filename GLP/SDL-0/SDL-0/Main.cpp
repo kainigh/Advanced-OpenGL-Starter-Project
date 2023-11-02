@@ -63,7 +63,13 @@ int main(int argc, char* argv[])
 
 		 0.5f, -0.5f, 0.0f, 0.0f, 1.0f, 0.0f,
 
-		 0.0f,  0.5f, 0.0f, 0.0f, 0.0f, 1.0f
+		 0.0f,  1.0f, 0.0f, 0.0f, 0.0f, 1.0f,
+
+		 0.0f, -1.0f, 0.0f, 1.0f, 0.0f, 0.0f,
+
+		 -0.5f, 0.5f, 0.0f, 0.0f, 1.0f, 0.0f,
+
+		 0.5f,  0.5f, 0.0f, 0.0f, 0.0f, 1.0f
 	};
 	
 /*
@@ -245,7 +251,7 @@ int main(int argc, char* argv[])
 		//OMG WE FINALLY DRAW ! We use the GL_TRIANGLES primitive type
 		//We draw from vertex 0 and we will be drawing 3 vertices
 
-		glDrawArrays(GL_TRIANGLES, 0, 3);
+		glDrawArrays(GL_TRIANGLES, 0, 6);
 
 		SDL_GL_SwapWindow(Window); // Swapbuffer
 
