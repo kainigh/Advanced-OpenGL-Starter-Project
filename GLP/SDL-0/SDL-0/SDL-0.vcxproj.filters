@@ -19,4 +19,13 @@
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="simpleVertex.shader" />
+    <None Include="simpleFragment.shader" />
+    <None Include="sinFragment.shader" />
+    <None Include="rgbVertex.shader" />
+    <None Include="rgbFragment.shader" />
+    <None Include="equalVertex.shader" />
+    <None Include="equalFragment.shader" />
+  </ItemGroup>
 </Project>
