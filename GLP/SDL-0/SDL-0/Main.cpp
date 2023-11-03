@@ -274,7 +274,8 @@ int main(int argc, char* argv[])
 
 		glUniform4f(vertexColorLocation, redColor, 1.0f, 0.0f, 1.0f);*/
 
-		
+
+		glUseProgram(shaderProgram);
 		int vertexColorLocation = glGetUniformLocation(shaderProgram, "ourColor");
 
 		float timeValue = (float)SDL_GetTicks() / 1000;
@@ -287,7 +288,7 @@ int main(int argc, char* argv[])
 		glUniform1f(h_offset, move);
 
 
-		glUseProgram(shaderProgram);
+		
 
 		glUniform4f(vertexColorLocation, 1.0f, 0.0f, 1.0f, 1.0f);
 
@@ -308,6 +309,7 @@ int main(int argc, char* argv[])
 		
 
 		SDL_GL_SwapWindow(Window); // Swapbuffer
+
 
 	}
 
