@@ -5,9 +5,13 @@ uniform float ratio;
 
 in VS_OUT{
     vec4 color;
+    vec2 tc;
+
 } tesc_in[];
 out TESC_OUT{
     vec4 color;
+    vec2 tc;
+
 } tesc_out[];
 
 void main(void)
@@ -23,4 +27,5 @@ void main(void)
     }
     gl_out[gl_InvocationID].gl_Position = gl_in[gl_InvocationID].gl_Position;
     tesc_out[gl_InvocationID].color = tesc_in[gl_InvocationID].color;
+    tesc_out[gl_InvocationID].tc = tesc_in[gl_InvocationID].tc;
 }

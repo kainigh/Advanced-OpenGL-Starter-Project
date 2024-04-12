@@ -99,6 +99,7 @@
     <ClCompile Include="Shader.cpp" />
     <ClCompile Include="ShaderProgram.cpp" />
     <ClCompile Include="ScreensaverScene.cpp" />
+    <ClCompile Include="SphereScene.cpp" />
     <ClCompile Include="TerrainTessellationScene.cpp" />
     <ClCompile Include="TessellationModesScene.cpp" />
     <ClCompile Include="TessellationScene.cpp" />
@@ -149,8 +150,10 @@
     <ClInclude Include="SceneManagement.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="ShaderProgram.h" />
+    <ClInclude Include="Shape3D.h" />
     <ClInclude Include="Shapes2D.h" />
     <ClInclude Include="ScreensaverScene.h" />
+    <ClInclude Include="SphereScene.h" />
     <ClInclude Include="TerrainTessellationScene.h" />
     <ClInclude Include="TessellationModesScene.h" />
     <ClInclude Include="TessellationScene.h" />

@@ -2,6 +2,7 @@
 #include "BaseScene.h"
 #include "ScreensaverScene.h"
 #include "CubeScene.h"
+#include "SphereScene.h"
 #include "TessellationModesScene.h"
 #include "TerrainTessellationScene.h"
 #include "TextureScene.h"
@@ -43,7 +44,7 @@ Scene* SceneSelector(SceneID id) {
 		break;
 	}
 	case CUBES: {
-		return new CubeScene();
+		return new SphereScene();
 	break;
 	}
 	default: {
