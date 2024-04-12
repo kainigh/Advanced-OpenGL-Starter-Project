@@ -14,7 +14,8 @@ enum SceneID {
 	TESSELLATION_MODES,
 	TERRAIN_TESSELLATION,
 	MIP_MAP,
-	CUBES
+	CUBES,
+	SPHERE
 };
 
 Scene* SceneSelector(SceneID id) {
@@ -44,8 +45,10 @@ Scene* SceneSelector(SceneID id) {
 		break;
 	}
 	case CUBES: {
-		return new SphereScene();
-	break;
+		return new CubeScene();
+	}
+	case SPHERE: {
+			return new SphereScene();
 	}
 	default: {
 		return nullptr;
