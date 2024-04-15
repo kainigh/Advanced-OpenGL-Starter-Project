@@ -44,7 +44,7 @@ protected:
 			vertices.push_back(z);
         }
     }
-
+    //Generate indicies for the order in which the triangles should be drawn
     // indices
     //  t--t+1
     //  |  / |
